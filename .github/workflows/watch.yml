@@ -1,0 +1,94 @@
+name: apple-refurb-watch
+
+# Runs in GitHub's cloud, so it works even when your computer is off.
+#
+# GitHub's own `schedule:` trigger is best-effort and in practice has been
+# delayed by 1-3+ hours on this repo regardless of the configured interval.
+# To get a real 5-minute cadence, the job re-triggers itself: it checks,
+# sleeps 5 minutes, then calls workflow_dispatch on itself. The hourly
+# schedule below is only a safety net in case that chain ever breaks.
+on:
+  schedule:
+    - cron: "0 * * * *"    # backup only; restarts the chain if it stops
+  workflow_dispatch: {}     # allow manual "Run workflow" from the Actions tab
+
+# contents: write - commit the updated state.json back to the repo.
+# actions: write   - let the job dispatch the next run of this same workflow.
+permissions:
+  contents: write
+  actions: write
+
+# Never let two runs race on the state file.
+concurrency:
+  group: refurb-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run watcher
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          # pipefail so a watcher.py failure fails this step even though it's piped into tee;
+          # the log is kept for the health check below to inspect independently of the exit code.
+          set -o pipefail
+          python watcher.py 2>&1 | tee watcher.log
+
+      - name: Verify run health
+        if: always()
+        run: |
+          # Confirms the run did what it claims: no silent failures, and if no email went
+          # out, that it's specifically because there was nothing to report (or email is
+          # unconfigured) - not because a check quietly broke.
+          if [[ ! -f watcher.log ]]; then
+            echo "::error::watcher.log is missing; the watcher step did not produce output"
+            exit 1
+          fi
+          if grep -qE '\] (FAILED:|ERROR: every target failed)' watcher.log; then
+            echo "::error::watcher run failed - see the 'Run watcher' step log for details"
+            exit 1
+          fi
+          if grep -qE '\] ERROR \[' watcher.log; then
+            echo "::warning::one or more targets had a fetch/parse error this run (previous snapshot kept for that target) - check watcher.log"
+          fi
+          if grep -qE 'Sent (change|startup confirmation) email' watcher.log; then
+            echo "Checks OK - email sent this run."
+          elif grep -qE 'No changes since last check|Email disabled \(set GMAIL_USER' watcher.log; then
+            echo "Checks OK - no email sent this run, confirmed reason: no changes / email not configured."
+          else
+            echo "::error::no email was sent this run, but the log doesn't confirm why (expected 'No changes' or 'Email disabled') - investigate watcher.log"
+            exit 1
+          fi
+
+      - name: Commit updated snapshot
+        run: |
+          # Persist the new snapshot only if it actually changed.
+          if [[ -n "$(git status --porcelain state.json)" ]]; then
+            git config user.name "refurb-watch-bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add state.json
+            git commit -m "chore: update refurb snapshot [skip ci]"
+            git push
+          else
+            echo "No state change to commit."
+          fi
+
+      - name: Wait 5 minutes
+        run: sleep 300
+
+      - name: Chain next run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run watch.yml
