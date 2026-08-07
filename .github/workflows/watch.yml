@@ -91,4 +91,18 @@ jobs:
       - name: Chain next run
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run watch.yml
+        run: |
+          # A transient GitHub API error here (e.g. HTTP 500 from the dispatch
+          # endpoint) would otherwise kill the whole continuous chain and leave
+          # recovery to the hourly schedule backup, which is itself best-effort
+          # and can lag by hours (see comment at the top of this file). Retry
+          # a few times with backoff before giving up.
+          for attempt in 1 2 3 4 5; do
+            if gh workflow run watch.yml; then
+              exit 0
+            fi
+            echo "::warning::dispatch attempt $attempt failed"
+            sleep $((attempt * 15))
+          done
+          echo "::error::could not dispatch the next run after 5 attempts; relying on the hourly schedule backup"
+          exit 1
