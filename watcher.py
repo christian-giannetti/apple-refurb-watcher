@@ -18,9 +18,13 @@ otherwise the script still scrapes and updates state, and just logs that email i
 
 Watchlist keywords: newly-added items are tagged (and exempted from MAX_PRICE) when they
 match a config worth flagging regardless of the usual price cap - see watchlist_tags():
-  NANOTEXTURE           title mentions the nano-texture glass display option
-  HIGH-SPEC-14-CORE     a 14" model with >15 CPU cores and >15 GPU cores, priced ~2500 EUR
-                        (a Pro/Max chip at a price it rarely reaches)
+  NANOTEXTURE                     title mentions the nano-texture glass display option
+  HIGH-SPEC-14-CORE               a 14" model with >15 CPU cores and >15 GPU cores, priced
+                                   ~2500 EUR (a Pro/Max chip at a price it rarely reaches)
+  ALERT-TARGET-14-M5PRO-15-16-BLACK   the exact target listing: 14" MacBook Pro, Apple M5
+                                   Pro chip, CPU 15-core, GPU 16-core, Nero siderale.
+                                   Also front-loads the email subject with
+                                   "TARGET CONFIG IN STOCK".
 
 Configuration (environment variables):
   REFURB_URLS         comma-separated listing URLs to watch (default: 14" and 16" MacBook Pro,
@@ -263,6 +267,18 @@ CORE_COUNT_RE = {
 # "around 2500 EUR" for the 14" high-core-count watch below.
 HIGH_SPEC_14_PRICE_BAND = (2300.0, 2700.0)
 
+# Exact target config: 14" MacBook Pro, Apple M5 Pro chip, CPU 15-core, GPU 16-core,
+# Nero siderale (Space Black) - https://www.apple.com/it/shop/product/fgdr4t/a. This is
+# the specific listing being watched for; not currently in stock (checked 2026-08-04, no
+# FGDR4T/A tile in the grid). Distinct from HIGH-SPEC-14-CORE below, which requires
+# >15 CPU cores and so does not match a 15-core CPU. Matched on chip/cores/color text
+# rather than part number alone, in case Apple reissues it under a different SKU.
+TARGET_CHIP_RE = re.compile(r"\bM5\s*Pro\b(?!\s*Max)", re.IGNORECASE)
+TARGET_COLOR_RE = re.compile(r"nero\s*siderale", re.IGNORECASE)
+TARGET_CPU_CORES = 15
+TARGET_GPU_CORES = 16
+TARGET_CONFIG_TAG = "ALERT-TARGET-14-M5PRO-15-16-BLACK"
+
 
 def watchlist_tags(item, label):
     """Return keyword tags for item configs worth flagging beyond the plain diff."""
@@ -273,16 +289,23 @@ def watchlist_tags(item, label):
     if '14"' in label:
         cpu_match = CORE_COUNT_RE["cpu"].search(title)
         gpu_match = CORE_COUNT_RE["gpu"].search(title)
+        cpu_cores = int(cpu_match.group(1)) if cpu_match else None
+        gpu_cores = int(gpu_match.group(1)) if gpu_match else None
         try:
             price = float(item.get("price"))
         except (TypeError, ValueError):
             price = None
         if (
-            cpu_match and gpu_match and price is not None
-            and int(cpu_match.group(1)) > 15 and int(gpu_match.group(1)) > 15
+            cpu_cores is not None and gpu_cores is not None and price is not None
+            and cpu_cores > 15 and gpu_cores > 15
             and HIGH_SPEC_14_PRICE_BAND[0] <= price <= HIGH_SPEC_14_PRICE_BAND[1]
         ):
             tags.append("HIGH-SPEC-14-CORE ~2500")
+        if (
+            cpu_cores == TARGET_CPU_CORES and gpu_cores == TARGET_GPU_CORES
+            and TARGET_CHIP_RE.search(title) and TARGET_COLOR_RE.search(title)
+        ):
+            tags.append(TARGET_CONFIG_TAG)
     return tags
 
 
@@ -357,6 +380,10 @@ def build_change_email(sections, new_target_intros):
     subject = "Apple Refurb: " + " | ".join(subject_bits)
     if all_tags:
         subject += " | " + " ".join(f"[{t}]" for t in sorted(all_tags))
+    if TARGET_CONFIG_TAG in all_tags:
+        # Front-load the subject so this specific config is visible in a notification
+        # preview without opening the email.
+        subject = "TARGET CONFIG IN STOCK - " + subject
 
     body_parts = [f"Apple refurbished watcher - change report\n{run_label}\n"]
     for label, tag, count in new_target_intros:

@@ -55,12 +55,17 @@ tags plus counts, for example `Apple Refurb: [16-MBP] +1 new | [14-MBP] ~1 price
 
 ## Watchlist keywords
 
-Two configurations are flagged and exempted from the price cap (`MAX_PRICE`) regardless
+Three configurations are flagged and exempted from the price cap (`MAX_PRICE`) regardless
 of price. Defined in `watchlist_tags()` in `watcher.py`:
 
 - `NANOTEXTURE`: title contains "nanotexture" (the nano-texture glass display option).
 - `HIGH-SPEC-14-CORE ~2500`: a 14" model with CPU cores > 15 and GPU cores > 15, priced
   between EUR 2300 and 2700.
+- `ALERT-TARGET-14-M5PRO-15-16-BLACK`: the exact target listing -
+  [14" MacBook Pro, Apple M5 Pro chip, CPU 15-core, GPU 16-core, Nero siderale](https://www.apple.com/it/shop/product/fgdr4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Pro-CPU-15%E2%80%91core-e-GPU-16%E2%80%91core-Nero-siderale)
+  (not the higher 18-core/20-core M5 Pro tier already covered by `HIGH-SPEC-14-CORE`).
+  When this fires, the email subject is also prefixed with `TARGET CONFIG IN STOCK -`
+  so it's visible in a notification preview.
 
 A match adds the tag in brackets next to the listing in the email, even when the price
 exceeds `MAX_PRICE`.
