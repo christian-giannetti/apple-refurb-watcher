@@ -21,9 +21,9 @@ match a config worth flagging regardless of the usual price cap - see watchlist_
   NANOTEXTURE                     title mentions the nano-texture glass display option
   HIGH-SPEC-14-CORE               a 14" model with >15 CPU cores and >15 GPU cores, priced
                                    ~2500 EUR (a Pro/Max chip at a price it rarely reaches)
-  ALERT-TARGET-14-M5PRO-15-16-BLACK   the exact target listing: 14" MacBook Pro, Apple M5
-                                   Pro chip, CPU 15-core, GPU 16-core, Nero siderale.
-                                   Also front-loads the email subject with
+  ALERT-TARGET-14-M5PRO-15-16      the target config: 14" MacBook Pro, Apple M5 Pro chip,
+                                   CPU 15-core, GPU 16-core, in ANY color and with or without
+                                   nanotexture. Also front-loads the email subject with
                                    "TARGET CONFIG IN STOCK".
 
 Configuration (environment variables):
@@ -267,17 +267,17 @@ CORE_COUNT_RE = {
 # "around 2500 EUR" for the 14" high-core-count watch below.
 HIGH_SPEC_14_PRICE_BAND = (2300.0, 2700.0)
 
-# Exact target config: 14" MacBook Pro, Apple M5 Pro chip, CPU 15-core, GPU 16-core,
-# Nero siderale (Space Black) - https://www.apple.com/it/shop/product/fgdr4t/a. This is
-# the specific listing being watched for; not currently in stock (checked 2026-08-04, no
-# FGDR4T/A tile in the grid). Distinct from HIGH-SPEC-14-CORE below, which requires
-# >15 CPU cores and so does not match a 15-core CPU. Matched on chip/cores/color text
-# rather than part number alone, in case Apple reissues it under a different SKU.
+# Target config: 14" MacBook Pro, Apple M5 Pro chip, CPU 15-core, GPU 16-core, in ANY
+# color and with or without the nanotexture display. This is the specific configuration
+# being watched for (screenshotted in stock on the IT store 2026-08-07 in Nero siderale
+# and Argento, e.g. FGDR4T/A, FGDN4T/A, G1ML0T/A). Distinct from HIGH-SPEC-14-CORE below,
+# which requires >15 CPU cores and so does not match a 15-core CPU. Matched on chip/cores
+# text rather than part number so every color and any reissued SKU is caught; the separate
+# NANOTEXTURE tag distinguishes the nano-texture variants.
 TARGET_CHIP_RE = re.compile(r"\bM5\s*Pro\b(?!\s*Max)", re.IGNORECASE)
-TARGET_COLOR_RE = re.compile(r"nero\s*siderale", re.IGNORECASE)
 TARGET_CPU_CORES = 15
 TARGET_GPU_CORES = 16
-TARGET_CONFIG_TAG = "ALERT-TARGET-14-M5PRO-15-16-BLACK"
+TARGET_CONFIG_TAG = "ALERT-TARGET-14-M5PRO-15-16"
 
 
 def watchlist_tags(item, label):
@@ -303,7 +303,7 @@ def watchlist_tags(item, label):
             tags.append("HIGH-SPEC-14-CORE ~2500")
         if (
             cpu_cores == TARGET_CPU_CORES and gpu_cores == TARGET_GPU_CORES
-            and TARGET_CHIP_RE.search(title) and TARGET_COLOR_RE.search(title)
+            and TARGET_CHIP_RE.search(title)
         ):
             tags.append(TARGET_CONFIG_TAG)
     return tags
