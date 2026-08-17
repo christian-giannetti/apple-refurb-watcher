@@ -157,9 +157,19 @@ def tile_matches(tile, groups):
 
 
 def build_snapshot(data, base_url):
-    """Reduce the bootstrap JSON to {partNumber: {title, price, url}} for the selected filter."""
+    """Reduce the bootstrap JSON to {partNumber: {title, price, url}} for the selected filter.
+
+    Raises ValueError if the page carries no selected filters. Every watched target
+    is a filtered category page (e.g. .../16-macbook-pro), and Apple ships the WHOLE
+    catalog in `tiles`, narrowing it client-side via `selectedGridFilters`. If that
+    filter is absent (a degraded/changed response), matching everything would silently
+    track the entire catalog under this target; refusing lets main() keep the previous
+    snapshot instead, exactly as for a fetch failure or an empty grid.
+    """
     # Replicate the page's client-side filtering so we only track the requested model.
     groups = selected_filter_map(data)
+    if not groups:
+        raise ValueError("no selectedGridFilters on page; refusing to track entire catalog")
     snapshot = {}
     # Each tile is one refurbished product offer in the grid.
     for tile in data.get("tiles", []):
@@ -167,8 +177,8 @@ def build_snapshot(data, base_url):
         if not part:
             # Skip non-product tiles (e.g. promo cells) that lack a part number.
             continue
-        # Keep only tiles matching the URL filter (when the URL carries one).
-        if groups and not tile_matches(tile, groups):
+        # Keep only tiles matching this target's filter.
+        if not tile_matches(tile, groups):
             continue
         # currentPrice.raw_amount is the machine-readable price, e.g. "679.00".
         price = tile.get("price", {}).get("currentPrice", {}).get("raw_amount")
