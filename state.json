@@ -1,142 +1,147 @@
 {
   "targets": {
     "14\" MacBook Pro": {
+      "FDE04T/A": {
+        "price": "1619.00",
+        "title": "MacBook Pro 14\" ricondizionato con chip Apple M5, CPU 10‑core e GPU 10‑core - Nero siderale",
+        "url": "https://www.apple.com/it/shop/product/fde04t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
+      },
       "FDE14T/A": {
         "price": "1909.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5, CPU 10‑core e GPU 10‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/fde14t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/fde14t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "FDE34T/A": {
         "price": "2099.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5, CPU 10‑core e GPU 10‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/fde34t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/fde34t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "FDE54T/A": {
         "price": "1909.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5, CPU 10‑core e GPU 10‑core - Argento",
-        "url": "https://www.apple.com/it/shop/product/fde54t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-Argento?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/fde54t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-Argento?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "FGDP4T/A": {
         "price": "3229.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5 Pro, CPU 18‑Core e GPU 20‑core - Argento",
-        "url": "https://www.apple.com/it/shop/product/fgdp4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Pro-CPU-18%E2%80%91Core-e-GPU-20%E2%80%91core-Argento?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/fgdp4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Pro-CPU-18%E2%80%91Core-e-GPU-20%E2%80%91core-Argento?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "FGDQ4T/A": {
         "price": "4159.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5 Max, CPU 18‑core e GPU 32‑core - Argento",
-        "url": "https://www.apple.com/it/shop/product/fgdq4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-32%E2%80%91core-Argento?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/fgdq4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-32%E2%80%91core-Argento?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "FGDU4T/A": {
         "price": "4159.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5 Max, CPU 18‑core e GPU 32‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/fgdu4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-32%E2%80%91core-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/fgdu4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-32%E2%80%91core-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "FX2F3T/A": {
         "price": "2619.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M4 Pro, CPU 14‑core e GPU 20‑core - Argento",
-        "url": "https://www.apple.com/it/shop/product/fx2f3t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Pro-CPU-14%E2%80%91core-e-GPU-20%E2%80%91core-Argento?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/fx2f3t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Pro-CPU-14%E2%80%91core-e-GPU-20%E2%80%91core-Argento?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "FX2G3T/A": {
         "price": "3549.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M4 Max, CPU 14‑core e GPU 32‑core - Argento",
-        "url": "https://www.apple.com/it/shop/product/fx2g3t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Max-CPU-14%E2%80%91core-e-GPU-32%E2%80%91core-Argento?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/fx2g3t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Max-CPU-14%E2%80%91core-e-GPU-32%E2%80%91core-Argento?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "FX2H3T/A": {
         "price": "2129.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M4 Pro, CPU 12‑core e GPU 16‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/fx2h3t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Pro-CPU-12%E2%80%91core-e-GPU-16%E2%80%91core-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/fx2h3t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Pro-CPU-12%E2%80%91core-e-GPU-16%E2%80%91core-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "FX2K3T/A": {
         "price": "3549.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M4 Max, CPU 14‑core e GPU 32‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/fx2k3t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Max-CPU-14%E2%80%91core-e-GPU-32%E2%80%91core-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/fx2k3t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Max-CPU-14%E2%80%91core-e-GPU-32%E2%80%91core-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1DT1T/A": {
         "price": "1949.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M4, CPU 10‑core e GPU 10‑core, display con nanotexture - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/g1dt1t/a/macbook-pro-14-pollici-ricondizionato-con-chip-apple-m4-con-cpu-10%E2%80%91core-e-gpu-10%E2%80%91core-display-con-nanotexture-nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1dt1t/a/macbook-pro-14-pollici-ricondizionato-con-chip-apple-m4-con-cpu-10%E2%80%91core-e-gpu-10%E2%80%91core-display-con-nanotexture-nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1FDNT/A": {
         "price": "7519.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M4 Max, CPU 16‑core e GPU 40‑core, display con nanotexture - Argento",
-        "url": "https://www.apple.com/it/shop/product/g1fdnt/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Max-CPU-16%E2%80%91core-e-GPU-40%E2%80%91core-display-con-nanotexture-Argento?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1fdnt/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Max-CPU-16%E2%80%91core-e-GPU-40%E2%80%91core-display-con-nanotexture-Argento?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1FF9T/A": {
         "price": "3789.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M4 Pro, CPU 14‑core e GPU 20‑core, display con nanotexture - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/g1ff9t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Pro-CPU-14%E2%80%91core-e-GPU-20%E2%80%91core-display-con-nanotexture-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1ff9t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M4-Pro-CPU-14%E2%80%91core-e-GPU-20%E2%80%91core-display-con-nanotexture-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1KJ2T/A": {
         "price": "2049.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5, CPU 10‑core e GPU 10‑core, display con nanotexture - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/g1kj2t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-display-con-nanotexture-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1kj2t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-display-con-nanotexture-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1KKAT/A": {
         "price": "3829.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5, CPU 10‑core e GPU 10‑core, display con nanotexture - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/g1kkat/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-display-con-nanotexture-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1kkat/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-CPU-10%E2%80%91core-e-GPU-10%E2%80%91core-display-con-nanotexture-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1MK4T/A": {
         "price": "6589.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5 Max, CPU 18‑core e GPU 40‑core - Argento",
-        "url": "https://www.apple.com/it/shop/product/g1mk4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-Argento?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1mk4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-Argento?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1MKMT/A": {
         "price": "6029.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5 Max, CPU 18‑core e GPU 40‑core - Argento",
-        "url": "https://www.apple.com/it/shop/product/g1mkmt/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-Argento?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1mkmt/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-Argento?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1ML6T/A": {
         "price": "3289.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5 Pro, CPU 18‑Core e GPU 20‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/g1ml6t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Pro-CPU-18%E2%80%91Core-e-GPU-20%E2%80%91core-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1ml6t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Pro-CPU-18%E2%80%91Core-e-GPU-20%E2%80%91core-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1MLET/A": {
         "price": "3099.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5 Pro, CPU 15‑core e GPU 16‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/g1mlet/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Pro-CPU-15%E2%80%91core-e-GPU-16%E2%80%91core-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1mlet/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Pro-CPU-15%E2%80%91core-e-GPU-16%E2%80%91core-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1MM7T/A": {
         "price": "4299.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5 Pro, CPU 18‑Core e GPU 20‑core, display con nanotexture - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/g1mm7t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Pro-CPU-18%E2%80%91Core-e-GPU-20%E2%80%91core-display-con-nanotexture-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1mm7t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Pro-CPU-18%E2%80%91Core-e-GPU-20%E2%80%91core-display-con-nanotexture-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1MN0T/A": {
         "price": "4299.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5 Max, CPU 18‑core e GPU 32‑core, display con nanotexture - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/g1mn0t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-32%E2%80%91core-display-con-nanotexture-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1mn0t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-32%E2%80%91core-display-con-nanotexture-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       },
       "G1MN4T/A": {
         "price": "6589.00",
         "title": "MacBook Pro 14\" ricondizionato con chip Apple M5 Max, CPU 18‑core e GPU 40‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/g1mn4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-Nero-siderale?fnode=7efabadcec9eb5e83347f0c2f76cba87a6523cca7fa195580884eda16f6ee34d7d6218ab0186193f7060ad37ff5d656283908e801379faf3ab2de57e36affc884b010a2022177abb9e9bcabfbea8bebd"
+        "url": "https://www.apple.com/it/shop/product/g1mn4t/a/MacBook-Pro-14-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-Nero-siderale?fnode=643fe76f9f1e477313ae2f9e778137e366d8b1532a9eb1363c777411c05b6a004824a6f03b184616f3646ab5ba71ebb2abf68b0a30f589b32cd241c9cf47e49877669fd7c1da3676ed0727dbf59692ae"
       }
     },
     "16\" MacBook Pro": {
       "FGE94T/A": {
         "price": "4929.00",
         "title": "MacBook Pro 16\" ricondizionato con chip Apple M5 Max, CPU 18‑core e GPU 40‑core - Argento",
-        "url": "https://www.apple.com/it/shop/product/fge94t/a/MacBook-Pro-16-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-Argento?fnode=ad5464477e64c3323225037e8d744aecc53af6594517610a5eb3c6261e56d6a177d197d0981545e8e5e8ebbc78da2512e28b442d662b4478cc17c0ff5e6417166928dd810521613c83a01900eadc0c2a"
+        "url": "https://www.apple.com/it/shop/product/fge94t/a/MacBook-Pro-16-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-Argento?fnode=467722b00f99f548ab900d1457f086ff23b1a99504e9fc808b028caa951175db0e40222e4536ffa49b6b6120e88ea7ff7185af0ba56f80b95c0a1325f1a232859a6f25a37c73c045d8d021e24c6db7e6"
       },
       "FGED4T/A": {
         "price": "4419.00",
         "title": "MacBook Pro 16\" ricondizionato con chip Apple M5 Max, CPU 18‑core e GPU 32‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/fged4t/a/MacBook-Pro-16-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-32%E2%80%91core-Nero-siderale?fnode=ad5464477e64c3323225037e8d744aecc53af6594517610a5eb3c6261e56d6a177d197d0981545e8e5e8ebbc78da2512e28b442d662b4478cc17c0ff5e6417166928dd810521613c83a01900eadc0c2a"
+        "url": "https://www.apple.com/it/shop/product/fged4t/a/MacBook-Pro-16-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-32%E2%80%91core-Nero-siderale?fnode=467722b00f99f548ab900d1457f086ff23b1a99504e9fc808b028caa951175db0e40222e4536ffa49b6b6120e88ea7ff7185af0ba56f80b95c0a1325f1a232859a6f25a37c73c045d8d021e24c6db7e6"
       },
       "FGEE4T/A": {
         "price": "4929.00",
         "title": "MacBook Pro 16\" ricondizionato con chip Apple M5 Max, CPU 18‑core e GPU 40‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/fgee4t/a/MacBook-Pro-16-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-Nero-siderale?fnode=ad5464477e64c3323225037e8d744aecc53af6594517610a5eb3c6261e56d6a177d197d0981545e8e5e8ebbc78da2512e28b442d662b4478cc17c0ff5e6417166928dd810521613c83a01900eadc0c2a"
+        "url": "https://www.apple.com/it/shop/product/fgee4t/a/MacBook-Pro-16-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-Nero-siderale?fnode=467722b00f99f548ab900d1457f086ff23b1a99504e9fc808b028caa951175db0e40222e4536ffa49b6b6120e88ea7ff7185af0ba56f80b95c0a1325f1a232859a6f25a37c73c045d8d021e24c6db7e6"
       },
       "FX303T/A": {
         "price": "3819.00",
         "title": "MacBook Pro 16\" ricondizionato con chip Apple M4 Max, CPU 14‑core e GPU 32‑core - Nero siderale",
-        "url": "https://www.apple.com/it/shop/product/fx303t/a/MacBook-Pro-16-ricondizionato-con-chip-Apple-M4-Max-CPU-14%E2%80%91core-e-GPU-32%E2%80%91core-Nero-siderale?fnode=ad5464477e64c3323225037e8d744aecc53af6594517610a5eb3c6261e56d6a177d197d0981545e8e5e8ebbc78da2512e28b442d662b4478cc17c0ff5e6417166928dd810521613c83a01900eadc0c2a"
+        "url": "https://www.apple.com/it/shop/product/fx303t/a/MacBook-Pro-16-ricondizionato-con-chip-Apple-M4-Max-CPU-14%E2%80%91core-e-GPU-32%E2%80%91core-Nero-siderale?fnode=467722b00f99f548ab900d1457f086ff23b1a99504e9fc808b028caa951175db0e40222e4536ffa49b6b6120e88ea7ff7185af0ba56f80b95c0a1325f1a232859a6f25a37c73c045d8d021e24c6db7e6"
       },
       "G1MY0T/A": {
         "price": "5069.00",
         "title": "MacBook Pro 16\" ricondizionato con chip Apple M5 Max, CPU 18‑core e GPU 40‑core, display con nanotexture - Argento",
-        "url": "https://www.apple.com/it/shop/product/g1my0t/a/MacBook-Pro-16-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-display-con-nanotexture-Argento?fnode=ad5464477e64c3323225037e8d744aecc53af6594517610a5eb3c6261e56d6a177d197d0981545e8e5e8ebbc78da2512e28b442d662b4478cc17c0ff5e6417166928dd810521613c83a01900eadc0c2a"
+        "url": "https://www.apple.com/it/shop/product/g1my0t/a/MacBook-Pro-16-ricondizionato-con-chip-Apple-M5-Max-CPU-18%E2%80%91core-e-GPU-40%E2%80%91core-display-con-nanotexture-Argento?fnode=467722b00f99f548ab900d1457f086ff23b1a99504e9fc808b028caa951175db0e40222e4536ffa49b6b6120e88ea7ff7185af0ba56f80b95c0a1325f1a232859a6f25a37c73c045d8d021e24c6db7e6"
       }
     }
   }
